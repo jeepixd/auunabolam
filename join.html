@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOLCHAU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('Loop Space GIF.gif');
+              background-repeat: no-repeat;
+        background-attachment: fixed;
+         background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+            animation: slideUp 1s ease-out;
+            
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        select {
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            backdrop-filter: blur(3px);
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, background-color 0.3s;
+        }
+
+        select:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        #join-btn {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            padding: 15px 35px;
+            border-radius: 15px;
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #join-btn:hover {
+            background-color: teal;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><i class="fas fa-video"></i> AAU NA BOLAM</h1>
+
+    <select id="select-room">
+        <option value="" disabled selected>Select a Room</option>
+        <option value="main">ROOM 1</option>
+        <option value="room_1">ROOM 2</option>
+        <option value="room_2">ROOM 3</option>
+    </select>
+
+    <br>
+
+    <button id="join-btn"><i class="fas fa-door-open"></i> Join Stream</button>
+</div>
+
+<script>
+    document.getElementById('join-btn').addEventListener('click', function () {
+        const selectedRoom = document.getElementById('select-room').value;
+
+        if (!selectedRoom) {
+            alert("Please select a room first!");
+            return;
+        }
+
+        window.location.href = `stream.html?room=${encodeURIComponent(selectedRoom)}`;
+    });
+</script>
+
+</body>
+</html>
+
+
+
