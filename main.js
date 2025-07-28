@@ -2,9 +2,9 @@ const APP_ID = "80e64c4b918644f7a2c3e41d2d556b27";
 
 // Replace these with actual valid tokens from Agora dashboard
 const TOKEN_MAP = {
-    room_1: "007eJxTYOjtPVL52Ozz4elG1RrGqjOmLZP4cDzLwfDs74yAVY6GW40UGCwMUs1Mkk2SLA0tzExM0swTjZKNU00MU4xSTE3NkozMZ5m1ZzQEMjLsKVnAwAiFID4bQ25iZl68IQMDAKNiIAM=",
-    room_2: "007eJxTYAgwDpRUvalq+oPljqhObMXMr08fNOuf7UpL2FA9/cKSlm8KDBYGqWYmySZJloYWZiYmaeaJRsnGqSaGKUYppqZmSUbma8zaMxoCGRnWnQ9nZmSAQBCfjSE3MTMv3oiBAQB7HyA3",
-    room_3: "007eJxTYAgwDpRUvalq+oPljqhObMXMr08fNOuf7UpL2FA9/cKSlm8KDBYGqWYmySZJloYWZiYmaeaJRsnGqSaGKUYppqZmSUbma8zaMxoCGRnWnQ9nZmSAQBCfjSE3MTMv3oiBAQB7HyA3"
+    room_1: "007eJxTYGg/Kt+9VmTqVaOALIZJkktkO7fddwnevd7DYMbmi/LTvh9TYLAwSDUzSTZJsjS0MDMxSTNPNEo2TjUxTDFKMTU1SzIyX2fRntEQyMjwZyIHIyMDBIL4bAxF+fm58YYMDABpER+q",
+    room_2: "007eJxTYHgjrr/FVLPu1cV/j6banLqTzb3Y7JP1o5qCaw8dvswTbb6iwGBhkGpmkmySZGloYWZikmaeaJRsnGpimGKUYmpqlmRkftGiPaMhkJHhIctfRkYGCATx2RiK8vNz440YGABOLCKQ",
+    room_3: "007eJxTYFi67c4GRraq2Vot56OsHimEqT+bn1/+9K+J5Y2JBRmcUYsVGCwMUs1Mkk2SLA0tzExM0swTjZKNU00MU4xSTE3NkozMX1i0ZzQEMjL4Wi9mYmSAQBCfjaEoPz833piBAQB3Xh9z"
 };
 
 function getRoomFromURL() {
